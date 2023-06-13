@@ -5,7 +5,7 @@ import random
 pygame.init()
  
 white = (255, 255, 255)
-yellow = (255, 255, 102)
+yellow = (250, 255, 102)
 black = (0, 0, 0)
 red = (213, 50, 80)
 green = (0, 255, 0)
@@ -15,7 +15,7 @@ dis_width = 600
 dis_height = 400
  
 dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Snake Game by Faradars')
+pygame.display.set_caption('Snake Game')
  
 clock = pygame.time.Clock()
  
@@ -117,6 +117,7 @@ def gameLoop():
             foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
             foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
             Length_of_snake += 1
+            print("Yummy !!")
  
         clock.tick(snake_speed)
  
